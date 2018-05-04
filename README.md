@@ -3,8 +3,8 @@
 A set of simple React boilerplates without all the crud
 
 create-react-app is great but has too much magic in it, plus a million packages.
-In the real world, at some point you will need to explode the configuration.
-And you will disover that you need to now understand the struts of create react app.
+In the real world, at some point you will need to eject the configuration
+and you will disover that you need to now understand the monumental create-react-app abstraction
 
 React is a library and not a framework. This lets you pick and choose other libraries
 for flux, routing, css, i18n and testing.
@@ -37,7 +37,8 @@ Simple React app with a webpack configuration. The goals:
 3-sass-img-font
 
 * Image and fonts
-* CSS bundling (Maybe use SASS)
+* SASS
+* CSS Modules
 
 4-redux
 
