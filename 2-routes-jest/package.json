@@ -22,6 +22,6 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server --open",
-    "test": "jest"
+    "test": "jest --watch"
   }
 }
