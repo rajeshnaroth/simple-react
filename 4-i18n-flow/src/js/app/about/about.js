@@ -2,7 +2,7 @@
 
 import React from "react"
 import style from "./about.css"
-import logo from "../../images/react.png"
+import logo from "../../../images/react.png"
 
 const About = (props) => (
   <div>

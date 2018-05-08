@@ -1,7 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Title gets created 1`] = `
-<h1>
-  Hello World
-</h1>
+<section>
+  <h1 />
+  <h2>
+    Hello World
+  </h2>
+</section>
 `;

@@ -1,22 +1,25 @@
 "use strict"
 
 import React from "react"
-import "./i18n/i18Initialize"
+import "../i18n/i18Initialize"
 import { I18n, Trans } from "react-i18next"
-import TranslationContext from "./context/translationContext"
+import TranslationContext from "../context/translationContext"
 
 import Title from "./header/title"
 import AppRoutes from "./routes"
-import sayHello from "./utils/hello"
-import "../scss/global.scss"
+import sayHello from "../utils/hello"
+import "../../scss/global.scss"
 
 // https://reacttraining.com/react-router/web/api/HashRouter
 
 const App = (props) => {
   return (
     <I18n>
-      {(t, { i18n }) => (
-        <TranslationContext.Provider value={{ t }}>
+      {(
+        translate,
+        { i18n } // passdown translation function
+      ) => (
+        <TranslationContext.Provider value={{ translate }}>
           <div>
             <Title message={sayHello("Earth")} />
             <AppRoutes />
