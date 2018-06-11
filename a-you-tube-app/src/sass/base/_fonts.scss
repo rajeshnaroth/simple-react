@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+$font: (
+  family: (
+    "Roboto",
+    Helvetica,
+    sans-serif
+  ),
+  familyMono: (
+    "Courier New",
+    monospace
+  ),
+  weight: 300,
+  weightBold: 400
+);
+
+@function font($key) {
+  @return map-get($font, $key);
+}

@@ -1,0 +1,55 @@
+@import "base/reset";
+@import "base/fonts";
+@import "base/variables";
+
+html body {
+  font-family: Roboto, Helvetica, sans-serif;
+  background-color: palette(bg);
+
+  a {
+    color: palette(link-color1);
+    &:hover {
+      color: palette(link-color2);
+    }
+    &:visited {
+      color: palette(link-color3);
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.8rem;
+  }
+
+  section {
+    margin: 1em;
+  }
+  div {
+    margin: 2em 1em;
+  }
+  p {
+    padding: 0 0 2rem 0;
+  }
+}

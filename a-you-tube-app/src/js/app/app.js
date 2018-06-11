@@ -4,6 +4,8 @@ import React from "react"
 import "../i18n/i18Initialize"
 import { I18n, Trans } from "react-i18next"
 import TranslationContext from "../context/translationContext"
+import reset from "reset-css"
+import "../../sass/global.scss"
 
 import Title from "./header/title"
 import AppRoutes from "./routes"

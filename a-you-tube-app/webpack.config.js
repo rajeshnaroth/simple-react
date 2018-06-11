@@ -4,11 +4,13 @@ const path = require("path")
 const HtmlWebPackPlugin = require("html-webpack-plugin")
 
 module.exports = {
-  entry: "./src/js/index.js",
   mode: "development",
+  entry: {
+    base: "./src/js/index.js"
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "[name].bundle.js"
   },
   module: {
     rules: [
@@ -24,6 +26,10 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"]
       },
       {
         test: /\.(svg|jpg|png|gif)$/,

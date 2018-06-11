@@ -1,0 +1,59 @@
+// Palette.
+$palette: (
+  bg: #ffffff,
+  bg-alt: #eeeeee,
+  fg: #000000,
+  fg-bold: #000000,
+  color1: #30363d,
+  color2: #db8992,
+  color3: #ab7aad,
+  color4: #897cad,
+  link-color1: #7794ce,
+  link-color2: #64abb4,
+  link-color3: #6ba78c,
+  fg-light: rgba(0, 0, 0, 0.75),
+  border: rgba(0, 0, 0, 0.2),
+  border-alt: rgba(0, 0, 0, 0.075),
+  border-bg: rgba(0, 0, 0, 0.05),
+  accent: #47d3e5
+);
+
+$inverted-palette: (
+  bg: #000000,
+  bg-alt: #222222,
+  fg: #ffffff,
+  fg-bold: #ffffff,
+  fg-light: #ffffff,
+  border: rgba(255, 255, 255, 1),
+  border-alt: rgba(255, 255, 255, 0.125),
+  border-bg: rgba(255, 255, 255, 0.125),
+  accent: #47d3e5
+);
+
+$box-padding: (
+  default: 7rem,
+  xlarge: 5rem,
+  large: 4rem,
+  medium: 3rem,
+  small: 2rem
+);
+
+$transition: (
+  fadeUp: 0.1s
+);
+
+@function palette($key) {
+  @return map-get($palette, $key);
+}
+
+@function inverted-palette($key) {
+  @return map-get($inverted-palette, $key);
+}
+
+@function box-padding($key) {
+  @return map-get($box-padding, $key);
+}
+
+@function transition($key) {
+  @return map-get($transition, $key);
+}
